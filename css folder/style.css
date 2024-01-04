@@ -1,0 +1,114 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-main
+{
+    /* box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.6);
+    background-color: black; */
+    
+}
+
+.logo
+{
+    width: 6%;
+   
+}
+
+.bg-img{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg-img-black{
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.icons-main
+{
+   padding: 2%;
+   border: 2px solid gray;
+   border-radius: 50%;
+   color: orangered;
+   
+    
+    
+
+}
+
+.button-main
+{
+    background-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid orangered;
+    
+}
+
+.navbar-toggler-icon{
+color: white;
+}
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:480px){
+    .media-query h3{
+        font-size: 13px;
+    }
+
+    .media-query h1{
+        font-size: 13px;
+    }
+
+    .media-query h4{
+        font-size: 13px;
+    }
+    .media-query img{
+        width: 100%;
+    }
+
+    .media-query i{
+        font-size: 5px;
+    }
+
+    .media-query{
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+}
+
+@media screen and (min-width:481px) and (max-width:576px){
+    .media-query{
+    text-align: center;
+    padding-top: 30px;
+}
+
+}
+
+@media screen and (min-width:481px) and (max-width:780px){
+    .media-query h3{
+        font-size: 18px;
+    }
+
+    .media-query h1{
+        font-size: 22px;
+    }
+
+    .media-query h4{
+        font-size: 16px;
+    }
+
+    .media-query img{
+        width: 100%;
+    }
+
+}
