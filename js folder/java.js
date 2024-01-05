@@ -105,7 +105,7 @@ buttonOne.addEventListener('click', function(){
       </div>
 
     
-      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 w-25">Choose Plan</button>
+      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-3">Choose Plan</button>
 
 
   </div>`
@@ -119,7 +119,7 @@ buttonTwo.addEventListener('click', function(){
 
     offerSection.innerHTML = ` <div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
-    <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
+    <i class="fa-solid fa-bolt offers-section-icons  offers-section-words"></i>
 
     <div>
       <h3 class="fw-bolder mt-3 text-white">Premuim Plan</h3>
@@ -220,7 +220,7 @@ buttonTwo.addEventListener('click', function(){
       </div>
 
     
-      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 w-25">Choose Plan</button>
+      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-3">Choose Plan</button>
 
 
   </div>`
@@ -238,7 +238,7 @@ buttonThree.addEventListener('click', function(){
 
     offerSection.innerHTML = `<div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
-    <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
+    <i class="fa-solid fa-shield-halved offers-section-icons  offers-section-words"></i>
 
     <div>
       <h3 class="fw-bolder mt-3 text-white">VIP Plan</h3>
@@ -354,7 +354,7 @@ buttonThree.addEventListener('click', function(){
         
       </div>
 
-      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 w-25">Choose Plan</button>
+      <button class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-3">Choose Plan</button>
 
 
 
