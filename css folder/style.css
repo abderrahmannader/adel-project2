@@ -10,6 +10,22 @@
     
 }
 
+.arrow-up
+{
+    width: 40px;
+    height: 40px;
+    background-color: orangered;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+.arrow-up i {
+    font-size: 20px;
+    color: white;
+}
+
 .logo
 {
     width: 6%;
@@ -99,6 +115,13 @@ color: white;
 .icons-hover:hover 
 {
     background-color: black !important;
+}
+
+
+.button-offers button
+{
+
+    padding: 20px 60px;
 }
 
 
