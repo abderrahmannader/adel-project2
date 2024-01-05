@@ -51,10 +51,16 @@
    border: 2px solid gray;
    border-radius: 50%;
    color: orangered;
+   transition: 1s;
    
     
     
 
+}
+
+.icons-main:hover
+{
+    background-color: white;
 }
 
 .button-main
@@ -63,6 +69,14 @@
     border-radius: 20px 20px 20px 20px;
     border: 2px solid orangered;
     
+}
+
+.button-main:hover
+{
+    background-color: orangered;
+    border: 2px solid orangered;
+    --bs-btn-active-bg: rgba(255, 255, 255, 0.5);
+    --bs-btn-active-border-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-toggler-icon{
@@ -170,6 +184,228 @@ color: white;
 {
     width: 100%;
 }
+
+/* section footer */
+
+.main5
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    background-position: center center;
+
+}
+
+.main5 h3
+{
+    font-family: 'roboto';
+}
+
+.main5 h2
+{
+    font-family: 'roboto';
+}
+
+.main5 p
+{
+    font-family: 'roboto';
+}
+
+.contener1
+{
+    
+    width: 85%;
+    display: flex;
+    padding: 50px 0px;
+}
+
+.first-section
+{
+   
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.footer-img
+{
+
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.footer-img img
+{
+    width: 50px;
+}
+
+.footer-img h2
+{
+    font-size: 30px;
+    color: white;
+}
+
+.footer-img h2::after
+{
+    content: '.';
+    font-size: 40px;
+    color: orangered;
+}
+
+.footer-words
+{
+
+    padding: 10px 0px;
+    color: white;
+}
+
+hr
+{
+    color: white;
+}
+
+
+
+.social h3
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.social ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.social a
+{
+    font-size: 25px;
+    color: white;
+}
+
+.second-section
+{
+
+    padding: 0px 50px;
+}
+
+.second-section h3
+{
+    color: white;
+    font-size: 18px;
+}
+
+.second-section p
+{
+    padding: 10px 0px;
+    color: white;
+}
+
+.second-section input
+{
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 2px solid #555555;  
+    border-radius: 4px;
+    width: 80%;
+}
+
+.second-section button
+{
+    padding: 15px 20px;
+    color: white;
+    margin: 8px 0;
+    border: 2px solid #CE1212;  
+    border-radius: 4px;
+   background-color: #CE1212;
+   transition: 1s;
+}
+
+.second-section button:hover
+{
+    background-color: red;
+}
+.links
+{
+
+    
+}
+
+.links ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    
+
+}
+
+.links li
+{
+    width: 50%;
+    padding: 5px 0px;
+    transition: 1s;
+}
+
+.links a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+.links li:hover
+{
+    background-color: rgba(127, 127, 144, 0.6)
+}
+
+.section-three
+{
+    padding-left: 10px;
+    width: 25%;
+}
+
+.section-three h3
+{
+    padding-bottom: 10px;
+    color: white;
+}
+
+.section-three li
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+
+
+
+}
+
+.section-three i
+{
+    font-size: 22px;
+    width: 10%;
+    color: #CE1212;
+}
+
+.section-three span
+{
+    padding-left: 10px;
+    width: 80%;
+    color: white;
+}
+
 
 
 
