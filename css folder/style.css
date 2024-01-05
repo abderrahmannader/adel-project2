@@ -122,7 +122,38 @@ color: white;
 {
 
     padding: 20px 60px;
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: orangered;
 }
+
+.button-offers button:hover
+{
+    background-color: orangered;
+    border: 2px solid white;
+    color: white;
+}
+
+.hr1
+{
+    height: 2px;
+    background-color: black;
+}
+
+.offers-section-icons
+{
+    font-size: 53px;
+}
+
+
+
+.offers-section-words
+{
+    color: orangered;
+}
+
+
+
 
 
 
