@@ -4,9 +4,13 @@ let buttonThree = document.querySelector(".offer3")
 let offerSection = document.querySelector(".offer-container-switcher")
 
 buttonOne.addEventListener('click', function(){
+    buttonOne.setAttribute("style", "background-color: orangered; color:white")
+    buttonTwo.setAttribute("style", "")
+    buttonThree.setAttribute("style", "")
+
     offerSection.innerHTML = ``
     
-    offerSection.innerHTML = `  <div class="col-6 d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = `  <div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
 
@@ -108,9 +112,12 @@ buttonOne.addEventListener('click', function(){
 })
 
 buttonTwo.addEventListener('click', function(){
+    buttonTwo.setAttribute("style", "background-color: orangered; color:white")
+    buttonOne.setAttribute("style", "")
+    buttonThree.setAttribute("style", "")
     offerSection.innerHTML = ``
 
-    offerSection.innerHTML = ` <div class="col-6 d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = ` <div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
 
@@ -223,10 +230,13 @@ buttonTwo.addEventListener('click', function(){
 
 
 buttonThree.addEventListener('click', function(){
+    buttonThree.setAttribute("style", "background-color: orangered; color:white")
+    buttonOne.setAttribute("style", "")
+    buttonTwo.setAttribute("style", "")
 
     offerSection.innerHTML = ``
 
-    offerSection.innerHTML = `<div class="col-6 d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = `<div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
 

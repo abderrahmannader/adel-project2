@@ -125,6 +125,9 @@ color: white;
     background-color: transparent;
     border: 2px solid orangered;
     color: orangered;
+    --bs-btn-active-bg: rgba(255, 255, 255, 0.5);
+   --bs-btn-active-border-color: rgba(255, 255, 255, 0.5);
+    /* .btn-primary */
 }
 
 .button-offers button:hover
@@ -155,6 +158,12 @@ color: white;
 .muted-background
 {
     background-color: #F5F5F5;
+}
+
+.shadow-container
+{
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.6);
+    
 }
 
 
