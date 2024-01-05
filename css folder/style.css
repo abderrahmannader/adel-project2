@@ -53,6 +53,53 @@
 color: white;
 }
 
+.icons-hover i
+{
+    transition: 2s;
+    color: black;
+    width: 20%;
+    margin: auto;
+    
+    border-radius: 50%;
+    font-size: 53px;
+    padding: 20px;
+    
+}
+.icons-hover h2
+{
+    transition: 2s;
+}
+
+.icons-hover p
+{
+    transition: 2s;
+}
+
+.icons-hover
+{
+    transition: 2s;
+}
+
+.icons-hover:hover i
+{
+    color: white;
+     
+}
+
+.icons-hover:hover h2
+{
+    color: white;
+}
+
+.icons-hover:hover p
+{
+    color: white;
+}
+
+.icons-hover:hover 
+{
+    background-color: black !important;
+}
 
 
 
