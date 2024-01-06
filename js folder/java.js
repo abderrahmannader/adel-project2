@@ -371,7 +371,20 @@ function offerPage(){
 
     changer.setAttribute('style', 'background-color:black')
     
-    changer.innerHTML = `<nav id="nav" class="navbar navbar-expand-sm nav-main mb-5 ">
+    changer.innerHTML = `<div id="success-program" class="bg-success w-25 d-flex justify-content-center m-auto border border-3 rounded-4 border-black success-program ">
+    <i class="fa-solid fa-circle-check display-6 text-black"></i>
+    <p class="ps-3 pt-2 fw-bolder text-black">successful</p>
+</div>
+
+<div id="faild-program" class="bg-danger w-25 d-flex justify-content-center m-auto border border-3 rounded-4 border-black success-program ">
+    <i class="fa-solid fa-circle-xmark display-6 text-black"></i>
+    <p class="ps-3 pt-2 fw-bolder text-black">Missing input</p>
+</div>
+
+
+
+
+<nav class="navbar navbar-expand-sm nav-main mb-5 " id="nav">
     <div class="container  ">
       <a class="navbar-brand logo" href="#"><img class="w-100" src="img/2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -400,18 +413,21 @@ function offerPage(){
   <section class="container">
     <div class="form-control bg-black w-75 m-auto p-5 border border-5">
 
-        <h2 class="text-center  pb-5 fw-bolder offers-section-words">${PlanName}</h2>
+        <h2 class="text-center text-white pb-5 fw-bolder">${PlanName}</h2>
         <label for="Name" class="text-white pb-3 fs-5">Name :</label>
         <input id="Name" class="form-control mb-4" type="text" placeholder="Your Name" aria-label="default input example">
         
         <label for="Weight" class="text-white pb-3 fs-5">Weight :</label>
         <input id="Weight" class="form-control mb-4" type="text" placeholder="Your Weight" aria-label="default input example">
         
-        <label for="Weight" class="text-white pb-3 fs-5">Age :</label>
-        <input id="Weight" class="form-control mb-4" type="text" placeholder="Your Age" aria-label="default input example">
+        <label for="phone" class="text-white pb-3 fs-5">WhatsApp Phone :</label>
+        <input id="phone" class="form-control mb-4" type="text" placeholder="Enter your WhatsApp phone" aria-label="default input example">
+
+        <label for="Age" class="text-white pb-3 fs-5">Age :</label>
+        <input id="Age" class="form-control mb-4" type="text" placeholder="Your Age" aria-label="default input example">
 
         <label for="injuries" class="text-white pb-3 fs-5">Any injuries? :</label>
-        <select onclick="injuries()"  class="form-select mb-4 FalseOption" aria-label="Default select example">
+        <select id="injuries" onclick="injuries()"  class="form-select mb-4 FalseOption" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
             <option   value="1">yes</option>
             <option  value="2">no</option>
@@ -421,7 +437,7 @@ function offerPage(){
 
 
           <label for="" class="text-white pb-3 fs-5">Any medical conditions or health problems? :</label>
-          <select onclick="medical()"  class="form-select mb-4 FalseOption2" aria-label="Default select example">
+          <select id="medical" onclick="medical()"  class="form-select mb-4 FalseOption2" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
               <option   value="1">yes</option>
               <option  value="2">no</option>
@@ -431,7 +447,7 @@ function offerPage(){
 
 
             <label for="" class="text-white pb-3 fs-5">Any allergies to specific types of food? :</label>
-          <select onclick="food()"  class="form-select mb-4 FalseOption3" aria-label="Default select example">
+          <select id="allergies" onclick="food()"  class="form-select mb-4 FalseOption3" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
               <option   value="1">yes</option>
               <option  value="2">no</option>
@@ -440,13 +456,13 @@ function offerPage(){
             </div>
 
             <label for="" class="text-white pb-3 fs-5">Favorite food :</label>
-            <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>
+            <textarea id="favorite"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
             <label for="" class="text-white pb-3 fs-5 ">Least favorite food :</label>
-            <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>
+            <textarea id="Least"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
             <label for="" class="text-white pb-3 fs-5">Any experience with exercises and gym equipment? :</label>
-          <select   class="form-select mb-4 " aria-label="Default select example">
+          <select id="xp"   class="form-select mb-4 " aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
               <option   value="1">yes</option>
               <option  value="2">no</option>
@@ -454,16 +470,19 @@ function offerPage(){
 
           
 
-            <label for="xp" class="text-white pb-3 fs-5">Total duration of experience :</label>
-            <input id="xp" class="form-control mb-4" type="text" placeholder="Year of experience" aria-label="default input example">
+            <label for="duration" class="text-white pb-3 fs-5">Total duration of experience :</label>
+            <input id="duration" class="form-control mb-4" type="text" placeholder="Year of experience" aria-label="default input example">
 
-            <label for="" class="text-white pb-3 fs-5 ">Specify and describe your goal in full :</label>
-            <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>
+            <label for="goal" class="text-white pb-3 fs-5 ">Specify and describe your goal in full :</label>
+            <textarea id="goal"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-            <label for="" class="text-primary pb-3 fs-5 ">Write everything you want to tell Dr. Adel. :</label>
-            <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>
+            <label for="adel" class="text-primary pb-3 fs-5 ">Write everything you want to tell Dr. Adel. :</label>
+            <textarea id="adel"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-            <button  class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-lg-3  col-md-6 ">Choose Plan</button>
+
+            <button onclick="GetData()"  class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-lg-3  col-md-6 ">Choose Plan</button>
+
+
             
 
 
@@ -477,7 +496,8 @@ function offerPage(){
 
 
 <script src="js folder/bootstrap.bundle.min.js"></script>
-<script src="js folder/java.js"></script>`
+<script src="js folder/java.js"></script>
+`
 }
 
 function injuries(){
@@ -524,5 +544,104 @@ function food(){
     }
     
     
+}async function GetData() {
+    let Name = document.querySelector("#Name")
+    let Weight = document.querySelector("#Weight")
+    let phone = document.querySelector("#phone")
+    let injuries = document.querySelector("#injuries")
+    let medical = document.querySelector("#medical")
+    let allergies = document.querySelector("#allergies")
+    let favorite = document.querySelector("#favorite")
+    let Least = document.querySelector("#Least")
+    let xp = document.querySelector("#xp")
+    let duration = document.querySelector("#duration")
+    let goal = document.querySelector("#goal")
+    let Age = document.querySelector("#Age")
+    let adel = document.querySelector("#adel")
+
+
+
+
+
+    data = {
+        clientName : Name.value,
+        clientWeight : Weight.value,
+        clientPhone : phone.value,
+        clientInjuries : injuries.value,
+        clientMedical : medical.value,
+        clientAllergies: allergies.value,
+        clientFavorite: favorite.value,
+        clientleast: Least.value,
+        clientXp: xp.value,
+        clientDuration: duration.value,
+        clientGoal: goal.value,
+        clientAge: Age.value,
+        clientAdel: adel.value
+
+
+        
+    }
+
+    console.log(data)
+
+    if( Name.value != "" && phone.value != "" ){
+
+        let successfull = document.querySelector(".success-program")
+
+    
+    successfull.setAttribute("style", "top: 30%;")
+
+    setTimeout(() => {
+        successfull.setAttribute("style", "top: -10%;");
+      }, 3000);
+
+      getFunction = await fetch("https://6598e1f5a20d3dc41cef0674.mockapi.io/clinets",{
+      method : 'POST',
+      body: JSON.stringify(data),
+      headers: {'Content-type': 'application/json'}
+    })
+
+      Name.value = ""
+    Weight.value = ""
+    injuries.value = ""
+    medical.value = ""
+    allergies.value = ""
+    favorite.value = ""
+    Least.value = ""
+    xp.value = ""
+    duration.value = ""
+    goal.value = ""
+    Age.value = ""
+    adel.value = ""
+    phone.value = ""
+
+    }else{
+        let faild = document.querySelector("#faild-program")
+
+      faild.setAttribute("style", "top: 30%;")
+
+    setTimeout(() => {
+        faild.setAttribute("style", "top: -10%;");
+      }, 3000);
+
+    }
+
+
+    
+
+
+
+     
+
+    
+
+
+ 
+
+    
+    
 }
+
+
+
 

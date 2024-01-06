@@ -44,6 +44,103 @@ function food(){
     
 }
 
+async function GetData() {
+    let Name = document.querySelector("#Name")
+    let Weight = document.querySelector("#Weight")
+    let phone = document.querySelector("#phone")
+    let injuries = document.querySelector("#injuries")
+    let medical = document.querySelector("#medical")
+    let allergies = document.querySelector("#allergies")
+    let favorite = document.querySelector("#favorite")
+    let Least = document.querySelector("#Least")
+    let xp = document.querySelector("#xp")
+    let duration = document.querySelector("#duration")
+    let goal = document.querySelector("#goal")
+    let Age = document.querySelector("#Age")
+    let adel = document.querySelector("#adel")
+
+
+
+
+
+    data = {
+        clientName : Name.value,
+        clientWeight : Weight.value,
+        clientPhone : phone.value,
+        clientInjuries : injuries.value,
+        clientMedical : medical.value,
+        clientAllergies: allergies.value,
+        clientFavorite: favorite.value,
+        clientleast: Least.value,
+        clientXp: xp.value,
+        clientDuration: duration.value,
+        clientGoal: goal.value,
+        clientAge: Age.value,
+        clientAdel: adel.value
+
+
+        
+    }
+
+    console.log(data)
+
+    if( Name.value != "" && phone.value != "" ){
+
+        let successfull = document.querySelector(".success-program")
+
+    
+    successfull.setAttribute("style", "top: 30%;")
+
+    setTimeout(() => {
+        successfull.setAttribute("style", "top: -10%;");
+      }, 3000);
+
+      getFunction = await fetch("https://6598e1f5a20d3dc41cef0674.mockapi.io/clinets",{
+      method : 'POST',
+      body: JSON.stringify(data),
+      headers: {'Content-type': 'application/json'}
+    })
+
+      Name.value = ""
+    Weight.value = ""
+    injuries.value = ""
+    medical.value = ""
+    allergies.value = ""
+    favorite.value = ""
+    Least.value = ""
+    xp.value = ""
+    duration.value = ""
+    goal.value = ""
+    Age.value = ""
+    adel.value = ""
+    phone.value = ""
+
+    }else{
+        let faild = document.querySelector("#faild-program")
+
+      faild.setAttribute("style", "top: 30%;")
+
+    setTimeout(() => {
+        faild.setAttribute("style", "top: -10%;");
+      }, 3000);
+
+    }
+
+
+    
+
+
+
+     
+
+    
+
+
+ 
+
+    
+    
+}
 
 
 
