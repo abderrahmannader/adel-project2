@@ -7,7 +7,7 @@ function injuries(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan" class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="injuriesExplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
@@ -23,7 +23,7 @@ function medical(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan" class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="medicalexplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
@@ -38,7 +38,7 @@ function food(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan " class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="foodexplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
@@ -58,6 +58,9 @@ async function GetData() {
     let goal = document.querySelector("#goal")
     let Age = document.querySelector("#Age")
     let adel = document.querySelector("#adel")
+    let injuriesExplan = document.querySelector("#injuriesExplan")
+    let medicalexplan = document.querySelector("#injuriesExplan")
+    let foodexplan = document.querySelector("#foodexplan")
 
 
 
@@ -76,7 +79,10 @@ async function GetData() {
         clientDuration: duration.value,
         clientGoal: goal.value,
         clientAge: Age.value,
-        clientAdel: adel.value
+        clientAdel: adel.value,
+        clientInjuriesExplan: injuriesExplan.value,
+        clientMedicalExplan: medicalexplan.value,
+        clientFoodExplan: foodexplan.value,
 
 
         
@@ -114,6 +120,9 @@ async function GetData() {
     Age.value = ""
     adel.value = ""
     phone.value = ""
+   injuriesExplan.value = ""
+    medicalexplan.value = ""
+    foodexplan.value = ""
 
     }else{
         let faild = document.querySelector("#faild-program")

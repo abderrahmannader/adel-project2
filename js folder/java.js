@@ -413,7 +413,7 @@ function offerPage(){
   <section class="container">
     <div class="form-control bg-black w-75 m-auto p-5 border border-5">
 
-        <h2 class="text-center text-white pb-5 fw-bolder">${PlanName}</h2>
+        <h2 class="text-center text-white pb-5 fw-bolder plan-name-holder offers-section-words">${PlanName}</h2>
         <label for="Name" class="text-white pb-3 fs-5">Name :</label>
         <input id="Name" class="form-control mb-4" type="text" placeholder="Your Name" aria-label="default input example">
         
@@ -480,7 +480,7 @@ function offerPage(){
             <textarea id="adel"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
 
-            <button onclick="GetData()"  class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-lg-3  col-md-6 ">Choose Plan</button>
+            <button onclick="GetData()"  class="btn btn-primary button-main mb-5 py-2 px-4 mt-4 col-lg-3  col-md-6 ">Submit</button>
 
 
             
@@ -509,7 +509,7 @@ function injuries(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan" class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="injuriesExplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
@@ -525,7 +525,7 @@ function medical(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan" class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="medicalexplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
@@ -540,11 +540,13 @@ function food(){
 
     }else{
         injuriesFunction.innerHTML = ` <label for="explan " class=" pb-3 fs-5 text-warning">explan :</label>
-        <textarea  class="form-control mb-4" id="explan" placeholder="Explan Here" rows="3"></textarea>`
+        <textarea  class="form-control mb-4" id="foodexplan" placeholder="Explan Here" rows="3"></textarea>`
     }
     
     
-}async function GetData() {
+}
+
+async function GetData() {
     let Name = document.querySelector("#Name")
     let Weight = document.querySelector("#Weight")
     let phone = document.querySelector("#phone")
@@ -558,10 +560,47 @@ function food(){
     let goal = document.querySelector("#goal")
     let Age = document.querySelector("#Age")
     let adel = document.querySelector("#adel")
+    let injuriesExplan = document.querySelector("#injuriesExplan")
+    let medicalexplan = document.querySelector("#injuriesExplan")
+    let foodexplan = document.querySelector("#foodexplan")
+    let planName = document.querySelector(".plan-name-holder")
+
+     
+    var injuriesExplanChecker
+    var medicalExplanChecker
+    var foodexplanExplanChecker
+
+    if(injuriesExplan == null){
+         injuriesExplanChecker = ""
+
+    }else{
+        injuriesExplanChecker = injuriesExplan.value
+
+    }
+
+    if(medicalexplan == null){
+        medicalExplanChecker = ""
+    }else{
+        medicalExplanChecker = medicalexplan.value
+    }
+
+    if(foodexplan == null){
+        foodexplanExplanChecker = ""
+        
+    }else{
+        foodexplanExplanChecker = foodexplan.value
+
+    }
+
+    
+    
+
+    
 
 
 
-
+    
+    console.log(foodexplan)
 
     data = {
         clientName : Name.value,
@@ -576,7 +615,12 @@ function food(){
         clientDuration: duration.value,
         clientGoal: goal.value,
         clientAge: Age.value,
-        clientAdel: adel.value
+        clientAdel: adel.value,
+        
+        clientInjuriesExplan: injuriesExplanChecker,
+        clientMedicalExplan: medicalExplanChecker,
+        clientFoodExplan: foodexplanExplanChecker,
+        clientPlanName: planName.innerHTML,
 
 
         
@@ -614,6 +658,9 @@ function food(){
     Age.value = ""
     adel.value = ""
     phone.value = ""
+    injuriesExplan.value = ""
+    medicalexplan.value = ""
+    foodexplan.value = ""
 
     }else{
         let faild = document.querySelector("#faild-program")
@@ -641,6 +688,7 @@ function food(){
     
     
 }
+
 
 
 
