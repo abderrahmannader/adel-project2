@@ -750,11 +750,11 @@ function arabicChange(){
         PlanName = "الخطة الاقتصادية"
     }
     if (PlanName == "Premuim Plan") {
-        PlanName = "الخطةالمميزة"
+        PlanName = "الخطة المميزة"
         
     }
     if (PlanName == "VIP Plan") {
-        PlanName = "الخطةالخاصة"
+        PlanName = "الخطة الخاصة"
         
     }
         
