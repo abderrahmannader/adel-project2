@@ -1,4 +1,4 @@
-<html>
+<html  >
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css folder/bootstrap.min.css">
         <link rel="stylesheet" href="css folder/style.css">
         
-        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     
 
@@ -52,85 +52,91 @@
                  
                 </ul>
               </div>
+
+              <div onclick="arabicChange()" class="arabic-icon ">
+                <img class="w-100" src="img/saudi-arabia.png" alt="">
+              </div>
+
+              <div></div>
             </div>
           </nav>
 
-          <section class="container">
+          <section   id="main-container-submit" class="container">
             <div class="form-control bg-black w-75 m-auto p-5 border border-5">
 
-                <h2 class="text-center text-white pb-5 fw-bolder">Application</h2>
-                <label for="Name" class="text-white pb-3 fs-5">Name :</label>
+                <h2 class="text-center text-white pb-5 fw-bolder application">Application</h2>
+                <label for="Name" class="text-white pb-3 fs-5 name">Name :</label>
                 <input id="Name" class="form-control mb-4" type="text" placeholder="Your Name" aria-label="default input example">
                 
-                <label for="Weight" class="text-white pb-3 fs-5">Weight :</label>
+                <label for="Weight" class="text-white pb-3 fs-5 weight">Weight :</label>
                 <input id="Weight" class="form-control mb-4" type="text" placeholder="Your Weight" aria-label="default input example">
                 
-                <label for="phone" class="text-white pb-3 fs-5">WhatsApp Phone :</label>
+                <label for="phone" class="text-white pb-3 fs-5 Phone">WhatsApp Phone :</label>
                 <input id="phone" class="form-control mb-4" type="text" placeholder="Enter your WhatsApp phone" aria-label="default input example">
 
-                <label for="Age" class="text-white pb-3 fs-5">Age :</label>
+                <label for="Age" class="text-white pb-3 fs-5 age">Age :</label>
                 <input id="Age" class="form-control mb-4" type="text" placeholder="Your Age" aria-label="default input example">
 
-                <label for="injuries" class="text-white pb-3 fs-5">Any injuries? :</label>
+                <label for="injuries" class="text-white pb-3 fs-5 injuries">Any injuries? :</label>
                 <select id="injuries" onclick="injuries()"  class="form-select mb-4 FalseOption" aria-label="Default select example">
-                    <option selected value="2">Open this select menu</option>
-                    <option   value="1">yes</option>
-                    <option  value="2">no</option>
+                    <option class="open-window" selected value="2">Open this select menu</option>
+                    <option class="yes"   value="1">yes</option>
+                    <option class="no"  value="2">no</option>
                   </select>
                   <div class="injuries">
                   </div>
 
 
-                  <label for="" class="text-white pb-3 fs-5">Any medical conditions or health problems? :</label>
+                  <label for="" class="text-white pb-3 fs-5  medical-conditions">Any medical conditions or health problems? :</label>
                   <select id="medical" onchange="medical()"  class="form-select mb-4 FalseOption2" aria-label="Default select example">
-                    <option selected value="2">Open this select menu</option>
-                      <option   value="1">yes</option>
-                      <option  value="2">no</option>
+                    <option class="open-window" selected value="2">Open this select menu</option>
+                      <option class="yes"   value="1">yes</option>
+                      <option class="no"  value="2">no</option>
                     </select>
                     <div class="medical">
                     </div>
 
 
-                    <label for="" class="text-white pb-3 fs-5">Any allergies to specific types of food? :</label>
+                    <label for="" class="text-white pb-3 fs-5 allergies">Any allergies to specific types of food? :</label>
                   <select id="allergies" onclick="food()"  class="form-select mb-4 FalseOption3" aria-label="Default select example">
-                    <option selected value="2">Open this select menu</option>
-                      <option   value="1">yes</option>
-                      <option  value="2">no</option>
+                    <option class="open-window" selected value="2">Open this select menu</option>
+                      <option class="yes"   value="1">yes</option>
+                      <option class="no"  value="2">no</option>
                     </select>
                     <div class="food">
                     </div>
 
-                    <label for="" class="text-white pb-3 fs-5">Favorite food :</label>
+                    <label for="" class="text-white pb-3 fs-5 Favorite-food">Favorite food :</label>
                     <textarea id="favorite"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-                    <label for="" class="text-white pb-3 fs-5 ">Least favorite food :</label>
+                    <label for="" class="text-white pb-3 fs-5 Least-favorite">Least favorite food :</label>
                     <textarea id="Least"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-                    <label for="" class="text-white pb-3 fs-5">Any experience with exercises and gym equipment? :</label>
+                    <label for="" class="text-white pb-3 fs-5 gym-equipment">Any experience with exercises and gym equipment? :</label>
                   <select id="xp"   class="form-select mb-4 " aria-label="Default select example">
-                    <option selected value="2">Open this select menu</option>
-                      <option   value="1">yes</option>
-                      <option  value="2">no</option>
+                    <option class="open-window" selected value="2">Open this select menu</option>
+                      <option class="yes"   value="1">yes</option>
+                      <option class="no"  value="2">no</option>
                     </select>
 
 
-                    
 
-                    <label for="" class="text-white pb-3 fs-5">Rate your daily effort :</label>
+
+                    <label for="" class="text-white pb-3 fs-5 daily-effort">Rate your daily effort :</label>
                   <select id="daily-effort"   class="form-select mb-4 " aria-label="Default select example">
-                    <option selected value="">Open this select menu</option>
-                      <option   value=" Exert little effort">Exert little effort</option>
-                      <option  value="Exert moderate effort">Exert moderate effort</option>
-                      <option  value="Exert high effort">Exert high effort</option>
+                    <option class="open-window" selected value="">Open this select menu</option>
+                      <option class="little-effort"  value=" Exert little effort">Exert little effort</option>
+                      <option class="moderate-effort"  value="Exert moderate effort">Exert moderate effort</option>
+                      <option  class="high-effort" value="Exert high effort">Exert high effort</option>
                     </select>
 
-                    <label for="" class="text-white pb-3 fs-5 ">Specify your working hours :</label>
+                    <label for="" class="text-white pb-3 fs-5 working-hours ">Specify your working hours :</label>
                     <textarea id="work-hours"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-                    <label for="" class="text-white pb-3 fs-5 ">Specify your sleeping schedule :</label>
+                    <label for="" class="text-white pb-3 fs-5 sleeping-schedule">Specify your sleeping schedule :</label>
                     <textarea id="sleep"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
 
-                    <label for="" class="text-white pb-3 fs-5">Do you want to achieve your goal :</label>
+                    <label for="" class="text-white pb-3 fs-5 achieve">Do you want to achieve your goal :</label>
                   <select id="achieve-goal"   class="form-select mb-4 " aria-label="Default select example">
                     <option selected value="">Open this select menu</option>
                       <option   value="in a short time with a strong plan">in a short time with a strong plan</option>
