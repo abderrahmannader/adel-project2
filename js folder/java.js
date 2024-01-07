@@ -468,6 +468,28 @@ function offerPage(){
               <option  value="2">no</option>
             </select>
 
+            <label for="" class="text-white pb-3 fs-5">Rate your daily effort :</label>
+                  <select id="daily-effort"   class="form-select mb-4 " aria-label="Default select example">
+                    <option selected value="">Open this select menu</option>
+                      <option   value=" Exert little effort">Exert little effort</option>
+                      <option  value="Exert moderate effort">Exert moderate effort</option>
+                      <option  value="Exert high effort">Exert high effort</option>
+                    </select>
+
+                    <label for="" class="text-white pb-3 fs-5 ">Specify your working hours :</label>
+                    <textarea id="work-hours"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
+
+                    <label for="" class="text-white pb-3 fs-5 ">Specify your sleeping schedule :</label>
+                    <textarea id="sleep"  class="form-control mb-4"  placeholder="Explan Here" rows="3"></textarea>
+
+                    <label for="" class="text-white pb-3 fs-5">Do you want to achieve your goal :</label>
+                  <select id="achieve-goal"   class="form-select mb-4 " aria-label="Default select example">
+                    <option selected value="">Open this select menu</option>
+                      <option   value="in a short time with a strong plan">in a short time with a strong plan</option>
+                      <option  value="moderate time with a moderate and balanced plan">moderate time with a moderate and balanced plan</option>
+                      
+                    </select>
+
           
 
             <label for="duration" class="text-white pb-3 fs-5">Total duration of experience :</label>
@@ -563,7 +585,13 @@ async function GetData() {
     let injuriesExplan = document.querySelector("#injuriesExplan")
     let medicalexplan = document.querySelector("#injuriesExplan")
     let foodexplan = document.querySelector("#foodexplan")
-    let planName = document.querySelector(".plan-name-holder")
+
+
+    let dailyEffort = document.querySelector("#daily-effort")
+    let workHours = document.querySelector("#work-hours")
+    let sleep = document.querySelector("#sleep")
+    let achieveGoal = document.querySelector("#achieve-goal")
+   
 
      
     var injuriesExplanChecker
@@ -622,8 +650,14 @@ async function GetData() {
         clientInjuriesExplan: injuriesExplanChecker,
         clientMedicalExplan: medicalExplanChecker,
         clientFoodExplan: foodexplanExplanChecker,
-        clientPlanName: planName.innerHTML,
+        
         clientDate : fullDate,
+
+        clientDailyEffort : dailyEffort.value,
+        clientWorkHours : workHours.value,
+        clientSleep : sleep.value,
+        clientAchieveGoal : achieveGoal.value,
+
 
 
         
@@ -691,6 +725,8 @@ async function GetData() {
     
     
 }
+
+
 
 
 

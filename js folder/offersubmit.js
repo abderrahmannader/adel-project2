@@ -61,6 +61,12 @@ async function GetData() {
     let injuriesExplan = document.querySelector("#injuriesExplan")
     let medicalexplan = document.querySelector("#injuriesExplan")
     let foodexplan = document.querySelector("#foodexplan")
+
+
+    let dailyEffort = document.querySelector("#daily-effort")
+    let workHours = document.querySelector("#work-hours")
+    let sleep = document.querySelector("#sleep")
+    let achieveGoal = document.querySelector("#achieve-goal")
    
 
      
@@ -122,6 +128,12 @@ async function GetData() {
         clientFoodExplan: foodexplanExplanChecker,
         
         clientDate : fullDate,
+
+        clientDailyEffort : dailyEffort.value,
+        clientWorkHours : workHours.value,
+        clientSleep : sleep.value,
+        clientAchieveGoal : achieveGoal.value,
+
 
 
         

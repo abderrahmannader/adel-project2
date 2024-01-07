@@ -36,6 +36,8 @@ async function dataRequest(){
         }else{
             finalRespnse[i].clientXp = "yes"
         }
+
+        
     
 
         dataAdder += `<h5 class="text-center fs-4 fw-bolder text-white">Client${i + 1}</h5>
@@ -54,7 +56,11 @@ async function dataRequest(){
         <h6 class="fw-bold fs-5 text-white pb-3">Favorite food: <span class="ps-3 text-success">${finalRespnse[i].clientFavorite}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">Least food: <span class="ps-3 text-success">${finalRespnse[i].clientleast}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">exp/exerises: <span class="ps-3 text-success">${finalRespnse[i].clientXp}</span></h6>
-        <h6 class="fw-bold fs-5 text-white pb-3">exp/duration food: <span class="ps-3 text-success">${finalRespnse[i].clientDuration}Years</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3">exp/duration: <span class="ps-3 text-success">${finalRespnse[i].clientDuration}Years</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3">clientAchieveGoal : <span class="ps-3 text-success">${finalRespnse[i].clientAchieveGoal }</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3">clientDailyEffort: <span class="ps-3 text-success">${finalRespnse[i].clientDailyEffort}</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3">clientWorkHours: <span class="ps-3 text-success">${finalRespnse[i].clientWorkHours}</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3">clientSleep: <span class="ps-3 text-success">${finalRespnse[i].clientSleep}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">specify desc: <span class="ps-3 text-success">${finalRespnse[i].clientGoal}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">message for you: <span class="ps-3 text-success">${finalRespnse[i].clientAdel}</span></h6>
         
