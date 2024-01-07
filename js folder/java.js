@@ -413,7 +413,7 @@ function offerPage(){
   <section class="container">
     <div class="form-control bg-black w-75 m-auto p-5 border border-5">
 
-        <h2 class="text-center text-white pb-5 fw-bolder plan-name-holder offers-section-words">${PlanName}</h2>
+        <h2 class="text-center  pb-5 fw-bolder plan-name-holder offers-section-words">${PlanName}</h2>
         <label for="Name" class="text-white pb-3 fs-5">Name :</label>
         <input id="Name" class="form-control mb-4" type="text" placeholder="Your Name" aria-label="default input example">
         
@@ -427,7 +427,7 @@ function offerPage(){
         <input id="Age" class="form-control mb-4" type="text" placeholder="Your Age" aria-label="default input example">
 
         <label for="injuries" class="text-white pb-3 fs-5">Any injuries? :</label>
-        <select id="injuries" onclick="injuries()"  class="form-select mb-4 FalseOption" aria-label="Default select example">
+        <select id="injuries" onchange="injuries()"  class="form-select mb-4 FalseOption" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
             <option   value="1">yes</option>
             <option  value="2">no</option>
@@ -437,7 +437,7 @@ function offerPage(){
 
 
           <label for="" class="text-white pb-3 fs-5">Any medical conditions or health problems? :</label>
-          <select id="medical" onclick="medical()"  class="form-select mb-4 FalseOption2" aria-label="Default select example">
+          <select id="medical" onchange="medical()"  class="form-select mb-4 FalseOption2" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
               <option   value="1">yes</option>
               <option  value="2">no</option>
@@ -447,7 +447,7 @@ function offerPage(){
 
 
             <label for="" class="text-white pb-3 fs-5">Any allergies to specific types of food? :</label>
-          <select id="allergies" onclick="food()"  class="form-select mb-4 FalseOption3" aria-label="Default select example">
+          <select id="allergies" onchange="food()"  class="form-select mb-4 FalseOption3" aria-label="Default select example">
             <option selected value="2">Open this select menu</option>
               <option   value="1">yes</option>
               <option  value="2">no</option>
