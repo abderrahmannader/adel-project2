@@ -61,17 +61,46 @@ async function GetData() {
     let injuriesExplan = document.querySelector("#injuriesExplan")
     let medicalexplan = document.querySelector("#injuriesExplan")
     let foodexplan = document.querySelector("#foodexplan")
+    let planName = document.querySelector(".plan-name-holder")
+
+     
+    var injuriesExplanChecker
+    var medicalExplanChecker
+    var foodexplanExplanChecker
+
+    if(injuriesExplan == null){
+         injuriesExplanChecker = ""
+
+    }else{
+        injuriesExplanChecker = injuriesExplan.value
+
+    }
+
+    if(medicalexplan == null){
+        medicalExplanChecker = ""
+    }else{
+        medicalExplanChecker = medicalexplan.value
+    }
+
+    if(foodexplan == null){
+        foodexplanExplanChecker = ""
+        
+    }else{
+        foodexplanExplanChecker = foodexplan.value
+
+    }
+
+    
+    
 
     let date = new Date()
 
     let fullDate = date.getDate()+"/"+date.getMonth()+1+"/"+ date.getFullYear()
+
+
+
     
-    console.log(fullDate)
-   
-
-
-
-
+    console.log(foodexplan)
 
     data = {
         clientName : Name.value,
@@ -87,9 +116,11 @@ async function GetData() {
         clientGoal: goal.value,
         clientAge: Age.value,
         clientAdel: adel.value,
-        clientInjuriesExplan: injuriesExplan.value,
-        clientMedicalExplan: medicalexplan.value,
-        clientFoodExplan: foodexplan.value,
+        
+        clientInjuriesExplan: injuriesExplanChecker,
+        clientMedicalExplan: medicalExplanChecker,
+        clientFoodExplan: foodexplanExplanChecker,
+        clientPlanName: planName.innerHTML,
         clientDate : fullDate,
 
 
@@ -128,7 +159,7 @@ async function GetData() {
     Age.value = ""
     adel.value = ""
     phone.value = ""
-   injuriesExplan.value = ""
+    injuriesExplan.value = ""
     medicalexplan.value = ""
     foodexplan.value = ""
 
@@ -158,10 +189,4 @@ async function GetData() {
     
     
 }
-
-
-
-
-
-
 
