@@ -568,6 +568,8 @@ function food(){
     
 }
 
+
+
 async function GetData() {
     let Name = document.querySelector("#Name")
     let Weight = document.querySelector("#Weight")
@@ -592,6 +594,7 @@ async function GetData() {
     let sleep = document.querySelector("#sleep")
     let achieveGoal = document.querySelector("#achieve-goal")
    
+    let planName = document.querySelector(".plan-name-holder")
 
      
     var injuriesExplanChecker
@@ -657,6 +660,7 @@ async function GetData() {
         clientWorkHours : workHours.value,
         clientSleep : sleep.value,
         clientAchieveGoal : achieveGoal.value,
+        clientPlanName: planName.innerHTML,
 
 
 
@@ -725,9 +729,6 @@ async function GetData() {
     
     
 }
-
-
-
 
 
 
