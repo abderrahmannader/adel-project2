@@ -61,7 +61,7 @@ async function GetData() {
     let injuriesExplan = document.querySelector("#injuriesExplan")
     let medicalexplan = document.querySelector("#injuriesExplan")
     let foodexplan = document.querySelector("#foodexplan")
-    let planName = document.querySelector(".plan-name-holder")
+   
 
      
     var injuriesExplanChecker
@@ -120,7 +120,7 @@ async function GetData() {
         clientInjuriesExplan: injuriesExplanChecker,
         clientMedicalExplan: medicalExplanChecker,
         clientFoodExplan: foodexplanExplanChecker,
-        clientPlanName: planName.innerHTML,
+        
         clientDate : fullDate,
 
 
