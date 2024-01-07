@@ -62,6 +62,13 @@ async function GetData() {
     let medicalexplan = document.querySelector("#injuriesExplan")
     let foodexplan = document.querySelector("#foodexplan")
 
+    let date = new Date()
+
+    let fullDate = date.getDate()+"/"+date.getMonth()+1+"/"+ date.getFullYear()
+    
+    console.log(fullDate)
+   
+
 
 
 
@@ -83,6 +90,7 @@ async function GetData() {
         clientInjuriesExplan: injuriesExplan.value,
         clientMedicalExplan: medicalexplan.value,
         clientFoodExplan: foodexplan.value,
+        clientDate : fullDate,
 
 
         
@@ -150,6 +158,10 @@ async function GetData() {
     
     
 }
+
+
+
+
 
 
 

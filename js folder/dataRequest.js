@@ -40,6 +40,7 @@ async function dataRequest(){
 
         dataAdder += `<h5 class="text-center fs-4 fw-bolder text-white">Client${i + 1}</h5>
         <h6 class="fw-bold fs-5 text-white pb-3 text-center pt-2">Plan: <span class="ps-3 fw-bolder text-warning">${finalRespnse[i].clientPlanName}</span></h6>
+        <h6 class="fw-bold fs-5 text-white pb-3 text-center pt-2">Date: <span class="ps-3 fw-bolder text-warning">${finalRespnse[i].clientDate}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">Name: <span class="ps-3 text-success">${finalRespnse[i].clientName}</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">Weight: <span class="ps-3 text-success">${finalRespnse[i].clientWeight}Kg</span></h6>
         <h6 class="fw-bold fs-5 text-white pb-3">Phone: <span class="ps-3 text-success">${finalRespnse[i].clientPhone}</span></h6>
