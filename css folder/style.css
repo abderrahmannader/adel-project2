@@ -478,6 +478,11 @@ hr
         padding-top: 30px;
     }
 
+    .trasformation-edit 
+    {
+        height: 25%;
+    }
+
 
 }
 
@@ -507,6 +512,11 @@ hr
 
     .media-query img{
         width: 100%;
+    }
+
+    .trasformation-edit 
+    {
+        height: 50%;
     }
 
 }
