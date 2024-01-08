@@ -432,8 +432,16 @@ hr
     height: 50%;
 }
 
+.liner-offers
+{
+    height: 15px;
+    background-color: black;
+}
 
-
+.shadow-container2
+{
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.6);
+}
 
 
 
