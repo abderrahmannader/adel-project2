@@ -480,7 +480,7 @@ hr
 
     .trasformation-edit 
     {
-        height: 10%;
+        height: 25%;
     }
 
     
@@ -500,7 +500,7 @@ hr
 
 .trasformation-edit 
 {
-    height: 10%;
+    height: 25%;
 }
 
 }
@@ -524,7 +524,17 @@ hr
 
     .trasformation-edit 
     {
-        height: 10%;
+        height: 25%;
+    }
+
+}
+
+
+@media screen and (min-width:780px) and (max-width:1000px){
+  
+    .trasformation-edit 
+    {
+        height: 25%;
     }
 
 }
