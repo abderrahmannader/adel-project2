@@ -517,18 +517,23 @@ function offerPage(){
 
       </div>
 
-      <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
+      <form class="d-none "  action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
-        
-            <input id="form-name" type="text" name="request" value="https://abderrahmannader.github.io/adel-project2/datarequests.html?fbclid=IwAR0v2UkuenISr_yJVH1Ecsw0I0T6_KkvRz0TzJVgupf53QQ1xJgRsAtgoNE" >
-            
-            
-            <button id="form-click" type="submit">Submit Form</button>
-        
-        </form>
-        
-        <script src="https://web3forms.com/client/script.js" async defer></script>
+      <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
+      <input type="hidden" name="from_name" value="New Request">
+      <input type="hidden" name="redirect" value="https://abderrahmannader.github.io/adel-project2/submitSuccess.html">
+
+
+
+  
+      <input id="form-name" type="text" name="request" value="https://abderrahmannader.github.io/adel-project2/datarequests.html?fbclid=IwAR0v2UkuenISr_yJVH1Ecsw0I0T6_KkvRz0TzJVgupf53QQ1xJgRsAtgoNE" >
+      
+      
+      <button id="form-click" type="submit">Submit Form</button>
+  
+  </form>
+  
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
   </section>
   
@@ -889,18 +894,23 @@ function arabicChange(){
     
       </div>
       
-      <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
+      <form class="d-none "  action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
-        
-            <input id="form-name" type="text" name="request" value="https://abderrahmannader.github.io/adel-project2/datarequests.html?fbclid=IwAR0v2UkuenISr_yJVH1Ecsw0I0T6_KkvRz0TzJVgupf53QQ1xJgRsAtgoNE" >
-            
-            
-            <button id="form-click" type="submit">Submit Form</button>
-        
-        </form>
-        
-        <script src="https://web3forms.com/client/script.js" async defer></script>
+      <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
+      <input type="hidden" name="from_name" value="New Request">
+      <input type="hidden" name="redirect" value="https://abderrahmannader.github.io/adel-project2/submitSuccess.html">
+
+
+
+  
+      <input id="form-name" type="text" name="request" value="https://abderrahmannader.github.io/adel-project2/datarequests.html?fbclid=IwAR0v2UkuenISr_yJVH1Ecsw0I0T6_KkvRz0TzJVgupf53QQ1xJgRsAtgoNE" >
+      
+      
+      <button id="form-click" type="submit">Submit Form</button>
+  
+  </form>
+  
+  <script src="https://web3forms.com/client/script.js" async defer></script>
       
       
       `
