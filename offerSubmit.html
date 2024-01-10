@@ -62,6 +62,7 @@
           </nav>
 
           <section   id="main-container-submit" class="container">
+            
             <div class="form-control bg-black w-75 m-auto p-5 border border-5">
 
                 <h2 class="text-center text-white pb-5 fw-bolder application">Application</h2>
@@ -170,7 +171,18 @@
           </section>
           
          
+          <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
 
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70       ">
+        
+            <input id="form-name" type="text" name="request" value="There are new request " >
+            
+            
+            <button id="form-click" type="submit">Submit Form</button>
+        
+        </form>
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
 
         
         <script src="js folder/bootstrap.bundle.min.js"></script>

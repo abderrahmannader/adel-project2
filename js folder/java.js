@@ -517,6 +517,19 @@ function offerPage(){
 
       </div>
 
+      <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70            ">
+        
+            <input id="form-name" type="text" name="request" value="There are new request " >
+            
+            
+            <button id="form-click" type="submit">Submit Form</button>
+        
+        </form>
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+
   </section>
   
  
@@ -677,6 +690,9 @@ async function GetData() {
 
     if( Name.value != "" && phone.value != "" ){
 
+        clicked()
+        
+
         let successfull = document.querySelector(".success-program")
 
     
@@ -691,6 +707,9 @@ async function GetData() {
       body: JSON.stringify(data),
       headers: {'Content-type': 'application/json'}
     })
+
+
+    
 
       Name.value = ""
     Weight.value = ""
@@ -767,7 +786,7 @@ function arabicChange(){
     main.innerHTML = `
     <div class="form-control bg-black w-75 m-auto p-5 border border-5">
     
-        <h2 class="text-center  pb-5 fw-bolder application offers-section-words">${PlanName}</h2>
+        <h2 class="text-center  pb-5 fw-bolder plan-name-holder application offers-section-words">${PlanName}</h2>
         <label for="Name" class="text-white pb-3 fs-5 name">الاسم :</label>
         <input id="Name" class="form-control mb-4" type="text" placeholder="اسمك" aria-label="default input example">
         
@@ -868,7 +887,23 @@ function arabicChange(){
     
     
     
-      </div>`
+      </div>
+      
+      <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70            ">
+        
+            <input id="form-name" type="text" name="request" value="There are new request " >
+            
+            
+            <button id="form-click" type="submit">Submit Form</button>
+        
+        </form>
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+      
+      
+      `
 }
 
 
@@ -917,6 +952,12 @@ function foodArabic(){
     
 }
 
+function clicked(){
+
+    document.querySelector("#form-click").click()
+
+
+}
 
 
 

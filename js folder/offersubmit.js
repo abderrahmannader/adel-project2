@@ -143,6 +143,8 @@ async function GetData() {
 
     if( Name.value != "" && phone.value != "" ){
 
+        clicked()
+
         let successfull = document.querySelector(".success-program")
 
     
@@ -174,6 +176,8 @@ async function GetData() {
     injuriesExplan.value = ""
     medicalexplan.value = ""
     foodexplan.value = ""
+
+    
 
     }else{
         let faild = document.querySelector("#faild-program")
@@ -361,4 +365,13 @@ function foodArabic(){
     }
     
     
+}
+
+
+
+function clicked(){
+
+     document.querySelector("#form-click").click()
+
+
 }
