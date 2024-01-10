@@ -208,7 +208,7 @@ async function GetData() {
 
 
 
-
+arabicChange()
 function arabicChange(){
 
     let main = document.querySelector("#main-container-submit")
