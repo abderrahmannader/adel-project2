@@ -519,7 +519,7 @@ function offerPage(){
 
       <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70            ">
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
         
             <input id="form-name" type="text" name="request" value="There are new request " >
             
@@ -891,7 +891,7 @@ function arabicChange(){
       
       <form class="d-none"  action="https://api.web3forms.com/submit" method="POST">
 
-            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70            ">
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
         
             <input id="form-name" type="text" name="request" value="There are new request " >
             
