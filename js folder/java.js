@@ -979,7 +979,7 @@ function clicked(){
 }
 
 
-function clicked(){
+function clicked2(){
   let newletter = document.querySelector("#newsletterSub").value
   let newletterSender = document.querySelector("#form-name").value
 
