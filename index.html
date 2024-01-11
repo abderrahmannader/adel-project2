@@ -45,10 +45,13 @@
                         <a class="nav-link text-white fw-bolder" href="#pricing">Plans & Pricings</a>
                       </li>
                       <li class="nav-item pe-3">
-                        <a class="nav-link text-white fw-bolder" href="#">About Us</a>
+                        <a class="nav-link text-white fw-bolder" href="#Certifications">Certifications</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link text-white fw-bolder" href="#">Contact Us</a>
+                        <a class="nav-link text-white fw-bolder" href="#Ourservice">Our service</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link text-white fw-bolder" href="#Transformations">Transformations</a>
                       </li>
                      
                     </ul>
@@ -100,7 +103,7 @@
           </section>
 
 
-          <section class="  py-5 muted-background ">
+          <section id="Certifications" class="  py-5 muted-background ">
             <div class="container">
             <div>
               <h2 class="text-black text-center py-5 fw-bolder">Certifications</h2>
@@ -143,7 +146,7 @@
           
 
 
-          <section class=" bg-black">
+          <section id="Ourservice" class=" bg-black">
             <div class="container">
 
             <div>
@@ -183,24 +186,26 @@
 
               <div class="col-lg-4 col-md-6 col-sm-12 bg-black text-center d-flex flex-column py-5 border border-5 border-black icons-hover bg-white rounded-5">
                 <i class="fa-solid fa-person-chalkboard"></i>
-                <h2 class="fw-bolder py-3">Online Courses</h2>
-                <p>Offering courses in the field of sports training, athlete nutrition, and self-development.</p>
+                <h2 class="fw-bolder py-3">Certificates and awards</h2>
+                <p>Free prizes and certificates are sent to clients who reached their goal smoothly and achieved difficult goals</p>
                 <br><br>
 
               </div>
 
               <div class="col-lg-4 col-md-6 col-sm-12 bg-black text-center d-flex flex-column py-5 border border-5 border-black icons-hover bg-white rounded-5">
                 <i class="fa-solid fa-notes-medical"></i>
-                <h2 class="fw-bolder py-3">Medical History</h2>
-                <p>Comprehensive tracking of the client’s medical and family history to identify potential health conflicts. Inquiries about injury history post-rehabilitation with a physiotherapist. Detailed follow-up of analyses with in-house specialists.</p>
-
+                <h2 class="fw-bolder py-3">Anabolic Steroids </h2>
+                <p>Experience and knowledge in anabolic steroids to prepare for championships</p>
+                <br><br>
               </div>
 
               <div class="col-lg-4 col-md-6  col-sm-12 bg-black text-center d-flex flex-column py-5 border border-5 border-black icons-hover bg-white rounded-5">
                 <i class="fa-solid fa-book"></i>
-                <h2 class="fw-bolder py-3">Books & E-Books</h2>
-                <p>Specialized scientific books in the field of sports training and bodybuilding, self-development, and sharing practical experience in the field of work.</p>
-                <br><br>
+                <h2 class="fw-bolder py-3">Preparing to bodybuilding championships</h2>
+                <p>I'll be with u from the beginning until winning the championship
+
+                  Natural and steroids users</p>
+                <br>
 
               </div>
 
@@ -220,7 +225,7 @@
 
 
 
-          <section class="py-5 muted-background">
+          <section id="Transformations" class="py-5 muted-background">
             <div class="container pb-5 ">
 
               <div>
@@ -339,8 +344,11 @@
               <div >
                 <h3 class="fw-bolder mt-3 text-white plan-name">Economy Plan</h3>
               </div>
-          
-              <h2 class="fw-bolder offers-section-words">1500EGP</h2>
+              <div class="d-flex justify-content-between py-2">
+                <h2 class="fw-bolder offers-section-words">1500EGP</h2>
+                <h2 class="fw-bolder offers-section-words">80$</h2>
+              </div>
+              
           
               <div class="w-100 hr1 bg-white"></div>
           
@@ -498,7 +506,7 @@
                 <div class="second-section col-5">
                     <h3>Subscribe our Newsletter</h3>
                     <p>Don't miss out on our latest updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify!        </p>
-                    <input type="email" placeholder="Enter Your Email Address">
+                    <input id="newsletterSub" type="email" placeholder="Enter Your Email Address">
                     <button><i class="fa-solid fa-envelope"></i> Subscribe</button>
     
                     
@@ -526,6 +534,26 @@
 
 
           </section>
+
+
+
+          <form class="d-none "  action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="f5b4ab49-5223-430e-8066-53e7bb6c5f70">
+            <input type="hidden" name="from_name" value="Subscribe and Newsletter">
+            <input type="hidden" name="redirect" value="https://abderrahmannader.github.io/adel-project2/newletter.html">
+
+
+
+        
+            <input id="form-name" type="text" name="request" value="" >
+            
+            
+            <button id="form-click2" type="submit">Submit Form</button>
+        
+        </form>
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
 
 
 

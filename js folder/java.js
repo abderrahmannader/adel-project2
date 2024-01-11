@@ -18,7 +18,10 @@ buttonOne.addEventListener('click', function(){
       <h3 class="fw-bolder mt-3 text-white plan-name">Economy Plan</h3>
     </div>
 
+    <div class="d-flex justify-content-between py-2">
     <h2 class="fw-bolder offers-section-words">1500EGP</h2>
+    <h2 class="fw-bolder offers-section-words">80$</h2>
+  </div>
 
     <div class="w-100 hr1 bg-white"></div>
 
@@ -125,7 +128,10 @@ buttonTwo.addEventListener('click', function(){
       <h3 class="fw-bolder mt-3 text-white plan-name">Premuim Plan</h3>
     </div>
 
+    <div class="d-flex justify-content-between py-2">
     <h2 class="fw-bolder offers-section-words">2500EGP</h2>
+    <h2 class="fw-bolder offers-section-words">150$</h2>
+  </div>
 
     <div class="w-100 hr1 bg-white"></div>
 
@@ -244,7 +250,10 @@ buttonThree.addEventListener('click', function(){
       <h3 class="fw-bolder mt-3 text-white plan-name">VIP Plan</h3>
     </div>
 
+    <div class="d-flex justify-content-between py-2">
     <h2 class="fw-bolder offers-section-words">5000EGP</h2>
+    <h2 class="fw-bolder offers-section-words">200$</h2>
+  </div>
 
     <div class="w-100 hr1 bg-white"></div>
 
@@ -970,5 +979,16 @@ function clicked(){
 }
 
 
+function clicked(){
+  let newletter = document.querySelector("#newsletterSub").value
+  let newletterSender = document.querySelector("#form-name").value
 
+newletterSender = newletter
+  
+
+
+  document.querySelector("#form-click2").click()
+
+
+}
 
