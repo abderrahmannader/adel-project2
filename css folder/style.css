@@ -427,10 +427,6 @@ hr
 
 
 
-.carousel-edit-more{
-    width: 50%;
-    height: 50%;
-}
 
 .liner-offers
 {
@@ -469,6 +465,7 @@ hr
     
     background-position-x: left;
     background-position-y: center;
+    height: 50%;
     
 
 }
