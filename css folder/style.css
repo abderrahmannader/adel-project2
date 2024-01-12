@@ -494,6 +494,10 @@ hr
     border: 2px white solid;
 }
 
+.transformation-width{
+    height: 130%;
+    
+}
 
 
 @media screen and (min-width:100px) and (max-width:480px){
