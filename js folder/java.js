@@ -10,7 +10,7 @@ buttonOne.addEventListener('click', function(){
 
     offerSection.innerHTML = ``
     
-    offerSection.innerHTML = `  <div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = `  <div class="col-6 shadow-container d-flex flex-column section-two-bg2 m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-cube offers-section-icons  offers-section-words"></i>
 
@@ -120,7 +120,7 @@ buttonTwo.addEventListener('click', function(){
     buttonThree.setAttribute("style", "")
     offerSection.innerHTML = ``
 
-    offerSection.innerHTML = ` <div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = ` <div class="col-6 shadow-container d-flex flex-column section-two-bg2 m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-bolt offers-section-icons  offers-section-words"></i>
 
@@ -242,7 +242,7 @@ buttonThree.addEventListener('click', function(){
 
     offerSection.innerHTML = ``
 
-    offerSection.innerHTML = `<div class="col-6 shadow-container d-flex flex-column bg-black m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
+    offerSection.innerHTML = `<div class="col-6 shadow-container d-flex flex-column section-two-bg2 m-auto py-5 my-5 offers-section px-4 border border-5 rounded-5 border-black">
 
     <i class="fa-solid fa-shield-halved offers-section-icons  offers-section-words"></i>
 
