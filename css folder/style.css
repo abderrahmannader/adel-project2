@@ -461,12 +461,38 @@ hr
    
 }
 
+.section-trans-bg{
+    background-image: url(../transformation/44.jpg);
+    
+    background-repeat: no-repeat;
+    background-size:  cover;
+    
+    background-position-x: left;
+    background-position-y: center;
+    
+
+}
+
+.section-offers-bg{
+    background-image: url(../transformation/555.jpg);
+    
+    background-repeat: no-repeat;
+    background-size:  cover;
+    
+    background-position-x: left;
+    background-position-y: center;
+    
+
+}
+
 .section-two-bg2{
     background-color: rgba(0, 0, 0, 0.6)
 
 }
 
-
+.navbar-toggler{
+    border: 2px white solid;
+}
 
 
 
