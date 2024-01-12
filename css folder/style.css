@@ -449,7 +449,22 @@ hr
     
 }
 
+.section-two-bg
+{
+    background-image: url(../transformation/333.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: top;
+    ;
+   
+}
 
+.section-two-bg2{
+    background-color: rgba(0, 0, 0, 0.6)
+
+}
 
 
 
