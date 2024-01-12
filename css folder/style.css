@@ -465,7 +465,7 @@ hr
     background-image: url(../transformation/666.jpg);
     
     background-repeat: no-repeat;
-    background-size:  cover;
+    background-size:  100% auto;
     
     background-position-x: left;
     background-position-y: center;
@@ -496,10 +496,6 @@ hr
     border: 2px white solid;
 }
 
-.transformation-width{
-    
-    height: 100%;
-}
 
 
 @media screen and (min-width:100px) and (max-width:480px){
@@ -527,10 +523,7 @@ hr
         padding-top: 30px;
     }
 
-    .trasformation-edit 
-    {
-        height: 25%;
-    }
+   
 
     
 
@@ -571,19 +564,13 @@ hr
         width: 100%;
     }
 
-    .trasformation-edit 
-    {
-        height: 25%;
-    }
+    
 
 }
 
 
 @media screen and (min-width:780px) and (max-width:1000px){
   
-    .trasformation-edit 
-    {
-        height: 30%;
-    }
+  
 
 }
