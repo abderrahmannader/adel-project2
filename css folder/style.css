@@ -461,7 +461,7 @@ hr
     background-image: url(../transformation/666.jpg);
     
     background-repeat: no-repeat;
-    background-size:  100% auto;
+    background-size:  cover;
     
     background-position-x: left;
     background-position-y: center;
@@ -527,11 +527,7 @@ hr
 
    
 
-    .transformation-width
-    {
-        height: 600px;
-    }
-
+   
 
 }
 
@@ -569,10 +565,7 @@ hr
         width: 100%;
     }
 
-    .transformation-width
-    {
-        height: 600px;
-    }
+   
 
 }
 
