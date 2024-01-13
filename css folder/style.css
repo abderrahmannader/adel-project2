@@ -470,6 +470,8 @@ hr
 
 }
 
+
+
 .section-offers-bg{
     background-image: url(../transformation/555.jpg);
     
@@ -522,7 +524,10 @@ hr
 
    
 
-    
+    .transformation-width
+    {
+        height: 414px;
+    }
 
 
 }
@@ -561,7 +566,10 @@ hr
         width: 100%;
     }
 
-    
+    .transformation-width
+    {
+        height: 414px;
+    }
 
 }
 
