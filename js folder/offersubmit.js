@@ -143,7 +143,7 @@ async function GetData() {
 
     if( Name.value != "" && phone.value != "" ){
 
-        clicked()
+        
 
         let successfull = document.querySelector(".success-program")
 
@@ -159,6 +159,8 @@ async function GetData() {
       body: JSON.stringify(data),
       headers: {'Content-type': 'application/json'}
     })
+
+    clicked()
 
       Name.value = ""
     Weight.value = ""
@@ -176,6 +178,8 @@ async function GetData() {
     injuriesExplan.value = ""
     medicalexplan.value = ""
     foodexplan.value = ""
+
+    
 
     
 
